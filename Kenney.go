@@ -240,5 +240,5 @@ var Kenney = Font{
 		"WeHeart":	"\xee\xa7\xa3", 	// U+e9e3
 		"Wolfcms":	"\xee\xa7\xa0", 	// U+e9e0
 		"WolfcmsAlt":	"\xee\xa7\xa1", 	// U+e9e1
-	}
+	},
 }

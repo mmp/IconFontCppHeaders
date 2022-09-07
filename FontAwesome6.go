@@ -1401,5 +1401,5 @@ var FontAwesome6 = Font{
 		"YenSign":	"\xef\x85\x97", 	// U+f157
 		"YinYang":	"\xef\x9a\xad", 	// U+f6ad
 		"Z":	"Z", 	// U+005a
-	}
+	},
 }

@@ -1015,5 +1015,5 @@ var FontAwesome5 = Font{
 		"XRay":	"\xef\x92\x97", 	// U+f497
 		"YenSign":	"\xef\x85\x97", 	// U+f157
 		"YinYang":	"\xef\x9a\xad", 	// U+f6ad
-	}
+	},
 }

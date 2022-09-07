@@ -469,5 +469,5 @@ var FontAwesome5Brands = Font{
 		"Youtube":	"\xef\x85\xa7", 	// U+f167
 		"YoutubeSquare":	"\xef\x90\xb1", 	// U+f431
 		"Zhihu":	"\xef\x98\xbf", 	// U+f63f
-	}
+	},
 }

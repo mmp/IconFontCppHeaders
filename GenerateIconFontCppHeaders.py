@@ -615,7 +615,7 @@ class LanguageGo( Language ):
 
     @classmethod
     def epilogue( cls ):
-        return '\t}\n}\n'
+        return '\t},\n}\n'
 
     @classmethod
     def to_camelcase( cls, text ):

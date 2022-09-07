@@ -567,6 +567,7 @@ class LanguageGo( Language ):
             '// for use with {ttf_files}\n\n' + \
             'package IconFontCppHeaders\n\n'
 
+        cls.seen = set()
         ttf_files = []
         for ttf in cls.intermediate.get( 'ttfs' ):
             ttf_files.append( ttf[ 2 ])
@@ -605,10 +606,19 @@ class LanguageGo( Language ):
 
     @classmethod
     def line_icon( cls, icon ):
+        icon_name = cls.to_camelcase(icon[ 0 ])
+        # Material Design has multiple "Flourescent" entries; should we be prefixing them
+        # with something to disambiguate them? For now just keep the first one of any
+        # such repeats
+        if icon_name in cls.seen:
+            print( ' [ WARNING: ignoring duplicate {icon} in {name} ]'.format( icon = icon_name,
+                                                                               name = cls.file_name ) )
+            return ""
+        cls.seen.add(icon_name)
         tmpl_line_icon = '\t\t"{icon}":\t"{code}", \t// U+{unicode}\n'
         icon_code = repr( chr( int( icon[ 1 ], 16 )).encode( 'utf-8' ))[ 2:-1 ]
         result = tmpl_line_icon.format( abbr = cls.intermediate.get( 'font_abbr' ),
-                                        icon = cls.to_camelcase(icon[ 0 ]),
+                                        icon = icon_name,
                                         code = icon_code,
                                         unicode =icon[ 1 ] )
         return result

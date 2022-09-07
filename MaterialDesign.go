@@ -2244,4 +2244,5 @@ var MaterialDesign = Font{
 		"Zoom_in_map":	"\xee\xac\xad", 	// U+eb2d
 		"Zoom_out":	"\xee\xa4\x80", 	// U+e900
 		"Zoom_out_map":	"\xee\x95\xab", 	// U+e56b
+	}
 }

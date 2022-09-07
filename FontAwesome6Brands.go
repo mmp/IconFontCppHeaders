@@ -477,4 +477,5 @@ var FontAwesome6Brands = Font{
 		"Yoast":	"\xef\x8a\xb1", 	// U+f2b1
 		"Youtube":	"\xef\x85\xa7", 	// U+f167
 		"Zhihu":	"\xef\x98\xbf", 	// U+f63f
+	}
 }

@@ -687,4 +687,5 @@ var FontAwesome4 = Font{
 		"Superpowers":	"\xef\x8b\x9d", 	// U+f2dd
 		"Wpexplorer":	"\xef\x8b\x9e", 	// U+f2de
 		"Meetup":	"\xef\x8b\xa0", 	// U+f2e0
+	}
 }

@@ -167,4 +167,5 @@ var Fontaudio = Font{
 		"Xlrplug":	"\xef\x86\x99", 	// U+f199
 		"Zoomin":	"\xef\x86\x9a", 	// U+f19a
 		"Zoomout":	"\xef\x86\x9b", 	// U+f19b
+	}
 }
